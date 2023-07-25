@@ -4,24 +4,30 @@ import HeaderContextMenuMobile from "./headerContextMenu";
 import HeaderNav from "./headerNav";
 import HeaderTitle from "./headerTitle";
 import HeaderModalNav from "./headerModalNav";
-import { useState } from "react";
+import { useState, createContext, useContext } from "react";
+import { ModalContext } from "./modal-context";
 
-export default function Header() {
-  const [isModalOpen, setModalOpen] = useState(true);
+export default function Header({ className }: { className?: string }) {
+
+  
+  const modalContext = useContext(ModalContext); 
+
+  
 
   function headerModalNavClickHandler() {
-    setModalOpen((set) => !set);
+    modalContext.setModalOpen((set) => !set);
+    window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
   return (
-    <header>
-      {isModalOpen && (
+    <header className={!modalContext.isModalOpen ? "sticky top-0" : ""}>
+      {modalContext.isModalOpen && (
         <section className="absolute w-full h-full bg-slate-700 text-slate-100 px-4 my-4 text-3xl z-40 pt-14 overflow-hidden">
-          <HeaderModalNav setModalOpen={setModalOpen}></HeaderModalNav>
+          <HeaderModalNav></HeaderModalNav>
         </section>
       )}
 
-      <section className="flex justify-between relative items-center px-4 my-4 shadow-md text-3xl bg-slate-800 text-slate-100 py-2 z-50 ">
+      <section className={`${className} relative`}>
         <HeaderTitle></HeaderTitle>
         <HeaderContextMenuMobile
           clickHandler={headerModalNavClickHandler}

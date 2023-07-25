@@ -3,6 +3,10 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Header from "./Components/header";
 import Footer from "./Components/footer";
+import ModalContext from "./Components/modal-context";
+import { useContext } from "react";
+import Body from "./Components/Body";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,14 +19,20 @@ export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
-}) {
+})
+{
+
+ 
+
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <Header></Header>
-        {children}
-        <Footer></Footer>
-      </body>
+      <ModalContext>
+        <Body className={`${inter.className}`}>
+          <Header className="flex justify-between items-center px-4 my-4 shadow-md text-3xl bg-slate-800 text-slate-100 py-2 z-50 "></Header>
+          {children}
+          <Footer className="flex justify-between items-center px-4 my-4 shadow-md text-3xl bg-slate-800 text-slate-100 py-2 sticky bottom-0"></Footer>
+        </Body>
+      </ModalContext>
     </html>
   );
 }
