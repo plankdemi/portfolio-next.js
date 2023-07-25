@@ -1,13 +1,23 @@
 "use client";
 
 import { useContext } from "react";
-import { ModalContext } from "./modal-context";
+import { ModalContext } from "./Contexts/modal-context";
 
-export default function Body({ children }: { children: React.ReactNode }) {
+export default function Body({
+  children,
+  className,
+}: {
+  children: React.ReactNode;
+  className?: string;
+}) {
   const context = useContext(ModalContext);
 
   return (
-    <body className={context.isModalOpen ? "overflow-hidden" : ""}>
+    <body
+      className={
+        context.isModalOpen ? `overflow-hidden ${className}` : className
+      }
+    >
       {children}
     </body>
   );

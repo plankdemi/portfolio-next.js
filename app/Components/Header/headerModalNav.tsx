@@ -1,11 +1,10 @@
 import { Dispatch } from "redux";
 import { useContext } from "react";
-import { ModalContext } from "./modal-context";
+import { ModalContext } from "../Contexts/modal-context";
 
 import Link from "next/link";
 
 export default function HeaderModalNav() {
-
   const context = useContext(ModalContext);
 
   return (

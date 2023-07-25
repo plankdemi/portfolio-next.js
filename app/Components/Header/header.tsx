@@ -5,17 +5,13 @@ import HeaderNav from "./headerNav";
 import HeaderTitle from "./headerTitle";
 import HeaderModalNav from "./headerModalNav";
 import { useState, createContext, useContext } from "react";
-import { ModalContext } from "./modal-context";
+import { ModalContext } from "../Contexts/modal-context";
 
 export default function Header({ className }: { className?: string }) {
-
-  
-  const modalContext = useContext(ModalContext); 
-
-  
+  const modalContext = useContext(ModalContext);
 
   function headerModalNavClickHandler() {
-    modalContext.setModalOpen((set) => !set);
+    modalContext.setModalOpen((set: boolean) => !set);
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
