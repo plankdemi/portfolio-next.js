@@ -14,8 +14,8 @@ import { SiCplusplus } from "react-icons/si";
 
 export default function Home() {
   return (
-    <main className="text-l flex-1">
-      <section className="px-8 flex flex-col">
+    <main >
+      <section className="px-8 flex flex-col content-center">
         <div className="md:w-3/4 md:items-center text-center md:text-left flex flex-col md:flex-row md:justify-center md:mx-auto">
           <Image
             src="/images/images/unnamed.jpg"
@@ -66,7 +66,6 @@ export default function Home() {
               <TbBrandUnity className="inline w-10 h-10"></TbBrandUnity>
               <TbBrandCSharp className="inline w-10 h-10  "></TbBrandCSharp>
               <SiCplusplus className="inline w-10 h-10"></SiCplusplus>
-
               <FaJava className="inline w-10 h-10"></FaJava>
             </li>
 
