@@ -1,3 +1,5 @@
+import FetchDatabaseItems from "@/app/Components/fetchDatabaseItems";
+
 export default function PracticeProjects() {
-  return <h1>practice</h1>;
+  return <FetchDatabaseItems></FetchDatabaseItems>
 }
