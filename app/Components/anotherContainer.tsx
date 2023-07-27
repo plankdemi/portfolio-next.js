@@ -1,13 +1,13 @@
 import Container from "./container";
 import { Fragment } from "react";
 import Link from "next/link";
-export default function AnotherContainer(props) {
+export default function AnotherContainer(props: any) {
   //receives item through props as objects and sen
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
       {/* eslint-disable-next-line react/jsx-key */}
-      {props.projects.map((project) => (
+      {props.projects.map((project: any) => (
         <div key={project.name}>
           <Container
             title={project.name}
