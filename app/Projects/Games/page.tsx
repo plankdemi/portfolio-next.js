@@ -1,3 +1,5 @@
+import FetchDatabaseItems from "@/app/Components/fetchDatabaseItems";
+
 export default function Games(){
-    return <h1>Games</h1>
+   return <FetchDatabaseItems type="GAME"></FetchDatabaseItems>;
 }

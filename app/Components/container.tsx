@@ -12,7 +12,7 @@ export default function Container(props) {
           alt="myphoto"
           width="3860"
           height="1440"
-          className="h-48 w-full md:h-96 md:w-full object-cover"
+          className="h-48 w-full md:h-96 md:w-full object-fit"
           loading="lazy"
         />
       </div>

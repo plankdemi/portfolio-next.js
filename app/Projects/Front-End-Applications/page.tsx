@@ -1,3 +1,5 @@
+import FetchDatabaseItems from "@/app/Components/fetchDatabaseItems";
+
 export default function FrontEndApplications(){
-    return <h1>Apps</h1>
+    return <FetchDatabaseItems type="APPLICATION"></FetchDatabaseItems>;
 }
