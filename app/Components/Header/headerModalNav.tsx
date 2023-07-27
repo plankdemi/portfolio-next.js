@@ -13,7 +13,7 @@ export default function HeaderModalNav() {
         <li
           className="text-center py-4 my-4 rounded-2xl bg-slate-800"
           onClick={() => {
-            context.setModalOpen((set) => !set);
+            context.setModalOpen(!context.isModalOpen);
           }}
         >
           <Link href="/">Home</Link>
@@ -21,7 +21,7 @@ export default function HeaderModalNav() {
         <li
           className="text-center py-4 my-4 rounded-2xl bg-slate-800"
           onClick={() => {
-            context.setModalOpen((set) => !set);
+            context.setModalOpen(!context.isModalOpen);
           }}
         >
           <Link href="/Projects">Projects</Link>

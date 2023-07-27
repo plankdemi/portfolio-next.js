@@ -11,7 +11,7 @@ export default function Header({ className }: { className?: string }) {
   const modalContext = useContext(ModalContext);
 
   function headerModalNavClickHandler() {
-    modalContext.setModalOpen((set: boolean) => !set);
+    modalContext.setModalOpen(!modalContext.isModalOpen);
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
