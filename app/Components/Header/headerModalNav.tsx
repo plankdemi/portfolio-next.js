@@ -10,22 +10,27 @@ export default function HeaderModalNav() {
   return (
     <nav>
       <ul>
-        <li
-          className="text-center py-4 my-4 rounded-2xl bg-slate-800"
-          onClick={() => {
-            context.setModalOpen(!context.isModalOpen);
-          }}
-        >
-          <Link href="/">Home</Link>
-        </li>
-        <li
-          className="text-center py-4 my-4 rounded-2xl bg-slate-800"
-          onClick={() => {
-            context.setModalOpen(!context.isModalOpen);
-          }}
-        >
-          <Link href="/Projects">Projects</Link>
-        </li>
+        <Link href="/">
+          <li
+            className="text-center py-4 my-4 rounded-2xl bg-slate-800"
+            onClick={() => {
+              context.setModalOpen(!context.isModalOpen);
+            }}
+          >
+            Home
+          </li>
+        </Link>
+
+        <Link href="/Projects">
+          <li
+            className="text-center py-4 my-4 rounded-2xl bg-slate-800"
+            onClick={() => {
+              context.setModalOpen(!context.isModalOpen);
+            }}
+          >
+            Projects
+          </li>
+        </Link>
       </ul>
     </nav>
   );
