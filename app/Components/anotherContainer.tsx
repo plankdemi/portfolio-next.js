@@ -19,14 +19,14 @@ export default function AnotherContainer(props: any) {
             <Link
               target="_blank"
               href="https://github.com/plankdemi/AngularCalculator"
-              className="my-2 md:my-0 text-slate-800 bg-slate-100 rounded-full py-2 px-3 w-1/2 md:w-auto mx-auto hover:bg-slate-950 hover:text-slate-50"
+              className="my-2 md:my-0 text-slate-800 bg-slate-100 text-center rounded-full py-2 px-3 w-1/2 md:w-auto mx-auto hover:bg-slate-950 hover:text-slate-50"
             >
               GitHub
             </Link>
             <Link
               target="_blank"
               href={project.demoLink}
-              className="my-2 md:my-0 text-slate-800 bg-slate-100 rounded-full py-2 px-3 w-1/2 md:w-auto mx-auto hover:bg-slate-950 hover:text-slate-50"
+              className="my-2 md:my-0 text-slate-800 bg-slate-100 text-center rounded-full py-2 px-3 w-1/2 md:w-auto mx-auto hover:bg-slate-950 hover:text-slate-50"
             >
               DEMO
             </Link>
