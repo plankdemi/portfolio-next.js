@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaFacebook } from "react-icons/fa";
 
-export default function Container(props) {
+export default function Container(props: any) {
   return (
     <Link href={props.navigation}>
       <div className={props.className ?? ""}>
