@@ -12,10 +12,10 @@ import {
 } from "react-icons/tb";
 import { FaJava } from "react-icons/fa";
 import { SiCplusplus } from "react-icons/si";
-import database from "./Components/sendDatabaseItems";
+
 
 export default function Home() {
-  console.log(database);
+ 
 
   return (
     <main>
