@@ -1,4 +1,5 @@
 import Image from "next/image";
+
 import Link from "next/link";
 import {
   TbBrandCSharp,
@@ -11,10 +12,13 @@ import {
 } from "react-icons/tb";
 import { FaJava } from "react-icons/fa";
 import { SiCplusplus } from "react-icons/si";
+import database from "./Components/sendDatabaseItems";
 
 export default function Home() {
+  console.log(database);
+
   return (
-    <main >
+    <main>
       <section className="px-8 flex flex-col content-center">
         <div className="md:w-3/4 md:items-center text-center md:text-left flex flex-col md:flex-row md:justify-center md:mx-auto">
           <Image
