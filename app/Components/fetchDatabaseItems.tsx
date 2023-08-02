@@ -4,8 +4,7 @@ import axios from "axios";
 const API_ENDPOINT = "/api";
 
 const getAbsoluteURL = (relativeURL: String) => {
-  const vercelURL =
-    process.env.NEXT_PUBLIC_VERCEL_URL || "http://127.0.0.1:3000";
+  const vercelURL = process.env.NEXT_PUBLIC_VERCEL_URL;
   return `${vercelURL}${relativeURL}`;
 };
 
