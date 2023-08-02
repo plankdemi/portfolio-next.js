@@ -1,8 +1,17 @@
 import AnotherContainer from "./anotherContainer";
 import axios from "axios";
 
+const API_ENDPOINT = "/api";
+
+const getAbsoluteURL = (relativeURL: String) => {
+  const vercelURL =
+    process.env.NEXT_PUBLIC_VERCEL_URL || "http://localhost:3000";
+  return `${vercelURL}${relativeURL}`;
+};
+
 export default async function FetchDatabaseItems(props: any) {
-  const response = await axios.get("/api");
+  const absoluteURL = getAbsoluteURL(API_ENDPOINT);
+  const response = await axios.get(absoluteURL);
 
   if (response.status === 200) {
     const projects = response.data;

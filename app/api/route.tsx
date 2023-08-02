@@ -1,5 +1,8 @@
-import { json } from "stream/consumers";
+
 import clientPromise from "../../lib/mongodb";
+import cors from "cors";
+
+
 
 export async function GET(req: Request) {
   const client = await clientPromise;
