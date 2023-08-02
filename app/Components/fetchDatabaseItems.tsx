@@ -2,7 +2,7 @@ import AnotherContainer from "./anotherContainer";
 import axios from "axios";
 
 export default async function FetchDatabaseItems(props: any) {
-  const response = await axios.get("https://vladislavas.dev/api");
+  const response = await axios.get("/api");
 
   if (response.status === 200) {
     const projects = response.data;
