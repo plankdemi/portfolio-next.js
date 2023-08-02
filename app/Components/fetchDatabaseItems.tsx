@@ -7,7 +7,7 @@ export default async function FetchDatabaseItems(props: any) {
   if (response.status === 200) {
     const projects = response.data;
     const filteredProjects = projects.filter(
-      (project) => project.type === props.type
+      (project: any) => project.type === props.type
     );
 
     return <AnotherContainer projects={filteredProjects}></AnotherContainer>;
