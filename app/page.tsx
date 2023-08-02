@@ -1,5 +1,6 @@
 import Image from "next/image";
 
+
 import Link from "next/link";
 import {
   TbBrandCSharp,
@@ -13,9 +14,9 @@ import {
 import { FaJava } from "react-icons/fa";
 import { SiCplusplus } from "react-icons/si";
 
-
 export default function Home() {
- 
+
+
 
   return (
     <main>
