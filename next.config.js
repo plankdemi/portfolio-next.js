@@ -2,6 +2,7 @@
 const nextConfig = {};
 
 module.exports = {
+  exclude: /app\/api\/.*$/,
   nextConfig,
   eslint: {
     ignoreDuringBuilds: true,
