@@ -18,7 +18,7 @@ export default function AnotherContainer(props: any) {
           <div className="flex flex-col md:flex-row  md:justify-around bg-slate-800 mx-4 py-4 w-11/12 rounded-b-3xl">
             <Link
               target="_blank"
-              href="https://github.com/plankdemi/AngularCalculator"
+              href={project.githubLink}
               className="my-2 md:my-0 text-slate-800 bg-slate-100 text-center rounded-full py-2 px-3 w-1/2 md:w-auto mx-auto hover:bg-slate-950 hover:text-slate-50"
             >
               GitHub
