@@ -1,7 +1,7 @@
 import AnotherContainer from "./anotherContainer";
 import axios from "axios";
 
-const API_ENDPOINT = "/api";
+const API_ENDPOINT = "api";
 
 const getAbsoluteURL = (relativeURL: String) => {
   const vercelURL =
