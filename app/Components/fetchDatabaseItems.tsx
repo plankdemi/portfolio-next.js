@@ -5,7 +5,7 @@ const API_ENDPOINT = "/api";
 
 const getAbsoluteURL = (relativeURL: String) => {
   const vercelURL =
-    process.env.NEXT_PUBLIC_VERCEL_URL || "http://127.0.0.1:80";
+    process.env.NEXT_PUBLIC_VERCEL_URL1 || process.env.NEXT_PUBLIC_VERCEL_URL2;
   return `${vercelURL}${relativeURL}`;
 };
 
