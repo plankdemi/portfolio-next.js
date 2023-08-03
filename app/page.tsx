@@ -75,7 +75,7 @@ export default function Home() {
             </li>
 
             <br></br>
-            <Link href="/cv/My CV 2023-07.pdf" target="_blank">
+            <Link href="/cv/CV_Vladislavas_Baradulinas.pdf" target="_blank">
               <strong className="underline">CLICK HERE FOR MY CV</strong>
             </Link>
           </ul>
