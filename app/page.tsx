@@ -37,10 +37,10 @@ export default function Home() {
               </h2>
               <br></br>
               <p>
-                As an aspiring front-end web developer, I'm excited about the
+                As an aspiring full-stack developer, I'm excited about the
                 opportunity to apply my skills and creativity to develop
                 engaging and user-friendly websites. With a strong foundation in
-                HTML, CSS, and JavaScript, I'm eager to gain real-world
+                both front-end and back-end technologies, I'm eager to gain real-world
                 experience and expand my skill set in the industry.
                 <br></br>I have experience building websites and web
                 applications through online courses, coding challenges, and
